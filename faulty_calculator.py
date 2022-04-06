@@ -6,7 +6,7 @@
 # and then return the result
 
 
-# solution:--|
+# solution:--||
 
 o= input("give the operator")
 a=int(input("input the following :" " num1= "))
