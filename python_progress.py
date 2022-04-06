@@ -37,6 +37,11 @@
 # for i in range (0,10,1) :
 #     print("ankit is gone!"+str(i))
 
+# here in range(a,b,c)
+# a= initialisation which means starting point and is by default 0.
+# b= ending point which means the index upto which the loop will iterate
+# c= jumping value which means at which place it will jump simultaneously and it is by default 1.
+
 # Importing modules
 # sqrt()
 # pow()
@@ -91,5 +96,19 @@
 # eggs = 42
 # spam()
 # print(eggs)
+
+
+# list
+# list[]
+# bacon=["aman","gaurav","pratyush","abhishek"]
+# print(bacon[1])
+# print(bacon[0:3:-1])
+# len(bacon)
+# i=0
+# while i < len(bacon):
+#     print(bacon[i]+" kumar.")
+#     i+=1
+# for i in range(0,(len(bacon)),3):
+#     print(bacon[i]+" kumar")
 
 
