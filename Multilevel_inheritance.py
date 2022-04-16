@@ -1,3 +1,5 @@
+# MULTILEVEL INHERITANCE:-
+
 class electronics:
     def __init__ (self,name,input,output):
         self.name=name
@@ -8,8 +10,9 @@ class electronics:
         print(f"the name of this electronic device is {self.name},\nthe input source is {self.input},\nand the output source is {self.output}")
     
     material="semiconductor"
+    doping="phosphorus"
     
-class gadgets:  
+class gadgets(electronics):
     def __init__(self,use,price):
         self.use=use
         self.price=price
@@ -19,8 +22,7 @@ class gadgets:
     
     material="LED"
 
-# multiple inheritance:-
-class laptop(electronics,gadgets):         # depends on the order of the arguments.
+class laptop(gadgets):        
     def __init__(self,name,input,output,use,price,model,company):
         self.name=name
         self.input=input
@@ -37,7 +39,7 @@ diodes=electronics("diodes","DC","DC")
 display=gadgets("as a screen","2000")
 macbook=laptop("diodes","DC","DC","as a screen","2000","M1","apple")
 
-macbook.print_det_lap()
+print(macbook.doping)
+print(macbook.material)
 
-print(macbook.material)   #it will get it from the first class because we have given such order to it at line no.=23
 
