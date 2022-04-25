@@ -6,7 +6,7 @@ def print_name(n,*a,**q):     #here * denotes args and
     for i in a:
         print(i)
     for x,y in q.items():
-        print(f"the roll of {x} is {y}")
+        print(f"the roll of {x} is {y} ")
 
 
 
